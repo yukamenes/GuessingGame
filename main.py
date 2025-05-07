@@ -2,6 +2,14 @@ import art
 import random
 
 def game_difficulty(difficulty):
+    """Determines the number of attempts based on the difficulty level.
+    
+    Args:
+        difficulty (str): The difficulty level ('easy' or 'hard').
+    
+    Returns:
+        int: Number of attempts (10 for 'easy', 5 for 'hard').
+    """
     if difficulty == "easy":
         attempts = 10
     else:
@@ -9,6 +17,11 @@ def game_difficulty(difficulty):
     return attempts 
 
 def user_guess_check():
+    """Gets and validates the user's guess.
+    
+    Returns:
+        int: A number between 1 and 100 entered by the user.
+    """
     while True:
         try:
             user_guess = int(input("Make a guess: "))
@@ -19,8 +32,12 @@ def user_guess_check():
             print("The answer should be a number!")
             continue
     
-            
 def main_game_action():
+    """Runs the main logic of the number guessing game.
+    
+    The game picks a random number between 1 and 100, lets the user choose a difficulty
+    level, and allows guessing until attempts run out or the number is guessed.
+    """
     print(art.logo)
     print("Welcome to the Number Guessing Game!")
     print("I`m thinking about a number between 1 and 100")
@@ -44,6 +61,6 @@ def main_game_action():
             return
         attempts -= 1
         print(f"You have {attempts} remaining to guess the number")
-    print(f"You've run out of guesses.The answer was {computer_number}")
-main_game_action()
+    print(f"You've run out of guesses. The answer was {computer_number}")
 
+main_game_action()
