@@ -97,7 +97,6 @@ You got it! The answer was 82
 
 ## 🙌 Credits
 - ASCII art created using [patorjk.com/software/taag/](https://patorjk.com/software/taag/). 🖌️
-- Inspired by the awesome Python course demo from App Brewery. 📚
 
 ## 📜 License
 This project is licensed under the **CC0 1.0 Universal (CC0 1.0) Public Domain Dedication**.  
